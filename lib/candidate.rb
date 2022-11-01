@@ -1,5 +1,5 @@
 class Candidate
-  attr_reader :name, :party, :
+  attr_reader :name, :party, :votes
   def initialize(candidate_data)
     @name = candidate_data[:name]
     @party = candidate_data[:party]

@@ -17,7 +17,7 @@ RSpec.describe Candidate do
   end
 
   it 'can have no votes' do
-    expect(diana.votes).to eq(0)
+    expect(@diana.votes).to eq(0)
   end
 
   it 'can have votes' do
@@ -26,6 +26,6 @@ RSpec.describe Candidate do
     @diana.vote_for!
     expect(@diana.votes).to eq(3)
     @diana.vote_for!
-    expect(@diana.votes).to ea(4)
+    expect(@diana.votes).to eq(4)
   end
 end
