@@ -9,7 +9,7 @@ RSpec.describe Election do
     @race2 = Race.new("Texas Governor")
   end
   it '#initialize' do
-
+    expect(@election).to be_an_instance_of(Election)
   end
 
   it 'has a year' do
