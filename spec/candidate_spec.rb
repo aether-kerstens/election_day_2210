@@ -9,7 +9,7 @@ RSpec.describe Candidate do
   end
 
   it 'has a name' do
-
+    expect(@diana.name).to eq("Diana D")
   end
 
   it 'has a party end' do
