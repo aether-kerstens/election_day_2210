@@ -13,7 +13,7 @@ RSpec.describe Election do
   end
 
   it 'has a year' do
-
+    expect(@election.year).to eq('2022')
   end
 
   it 'has no races' do
