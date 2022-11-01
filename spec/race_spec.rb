@@ -21,7 +21,7 @@ RSpec.describe Race do
   end
 
   it 'candidate can have a class' do
-
+    expect(@candidate1.class).to eq(Candidate)
   end
 
   it 'candidate can have a name' do
