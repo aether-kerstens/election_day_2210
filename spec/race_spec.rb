@@ -4,8 +4,8 @@ require './lib/race'
 RSpec.describe Race do
   before(:each) do
     @race = Race.new("Texas Governor")
-    @candidate1 = @race.register_candidate!({name: "Diana D", party: :democrat})
-    candidate2 = @race.register_candidate!({name: "Roberto R", party: :republican})
+    @candidate1 = Candidate.new({name: "Diana D", party: :democrat})
+    candidate2 = Candidate.new({name: "Roberto R", party: :republican})
   end
 
   it '#initialize' do
@@ -33,7 +33,8 @@ RSpec.describe Race do
   end
 
   it 'can register candidate' do
-
+    @race.register_candidate!(@candidate1)
+    expect(@race.candidates).to eq([@candidate1])
   end
 
   it 'can have candidates' do
