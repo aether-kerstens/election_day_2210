@@ -17,7 +17,7 @@ RSpec.describe Election do
   end
 
   it 'has no races' do
-
+    expect(@election.races).to eq([])
   end
 
   it 'can have races' do
