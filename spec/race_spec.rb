@@ -17,7 +17,7 @@ RSpec.describe Race do
   end
 
   it 'has no candidates' do
-
+    expect(@race.candidates).to eq([])
   end
 
   it 'candidate can have a class' do
