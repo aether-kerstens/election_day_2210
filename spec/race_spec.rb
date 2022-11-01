@@ -29,7 +29,7 @@ RSpec.describe Race do
   end
 
   it 'candidate can have a party' do
-    
+    expect(@candidate1.party).to eq("Democrat")
   end
 
   it 'can register candidate' do
