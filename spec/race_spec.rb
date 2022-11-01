@@ -9,7 +9,7 @@ RSpec.describe Race do
   end
 
   it '#initialize' do
-
+    expect(@race)to be_an_instance_of(Race)
   end
 
   it 'has an office' do
