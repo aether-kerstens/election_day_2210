@@ -21,6 +21,11 @@ RSpec.describe Candidate do
   end
 
   it 'can have votes' do
-
+    @diana.vote_for!
+    @diana.vote_for!
+    @diana.vote_for!
+    expect(@diana.votes).to eq(3)
+    @diana.vote_for!
+    expect(@diana.votes).to ea(4)
   end
 end
