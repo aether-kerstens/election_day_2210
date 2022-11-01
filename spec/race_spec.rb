@@ -13,7 +13,7 @@ RSpec.describe Race do
   end
 
   it 'has an office' do
-
+    expect(@race.office).to eq("Texas Governor")
   end
 
   it 'has no candidates' do
