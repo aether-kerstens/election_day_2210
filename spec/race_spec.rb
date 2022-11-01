@@ -9,7 +9,7 @@ RSpec.describe Race do
   end
 
   it '#initialize' do
-    expect(@race)to be_an_instance_of(Race)
+    expect(@race).to be_an_instance_of(Race)
   end
 
   it 'has an office' do
@@ -29,7 +29,7 @@ RSpec.describe Race do
   end
 
   it 'candidate can have a party' do
-    expect(@candidate1.party).to eq("Democrat")
+    expect(@candidate1.party).to eq(:democrat)
   end
 
   it 'can register candidate' do
