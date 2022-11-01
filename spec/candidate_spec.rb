@@ -16,11 +16,11 @@ RSpec.describe Candidate do
     expect(@diana.party).to eq(:democrat)
   end
 
-  it 'can hold votes' do
-
+  it 'can have no votes' do
+    expect(diana.votes).to eq(0)
   end
 
-  it 'can collect votes' do
+  it 'can have votes' do
 
   end
 end
